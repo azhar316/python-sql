@@ -1,0 +1,13 @@
+{
+  "scopeName": "sql.injection",
+  "injectionSelector": "L:string.quoted.single.python, L:string.quoted.multi.python, L:meta.fstring.python",
+  "patterns": [{ "include": "#injection" }],
+  "repository": {
+    "injection": {
+      "name": "meta.embedded.block.sql",
+      "begin": "( *--sql )",
+      "end": "( *; )",
+      "patterns": [{ "include": "source.sql" }]
+    }
+  }
+}

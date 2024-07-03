@@ -17,6 +17,16 @@
         "command": "sql-expert.helloWorld",
         "title": "Hello World"
       }
+    ],
+    "grammars": [
+      {
+        "scopeName": "sql.injection",
+        "path": "./syntaxes/sql-injection.json",
+        "injectTo": ["source.python"],
+        "embeddedLanguages": {
+          "meta.embedded.block.sql": "sql"
+        }
+      }
     ]
   },
   "scripts": {
