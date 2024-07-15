@@ -12,20 +12,37 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "sql-expert.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "grammars": [
       {
         "scopeName": "sql.injection",
         "path": "./syntaxes/sql-injection.json",
-        "injectTo": ["source.python"],
+        "injectTo": [
+          "source.python"
+        ],
         "embeddedLanguages": {
           "meta.embedded.block.sql": "sql"
         }
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "sql-expert.removeEmbeddings",
+          "when": "editorLangId == python"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "sql-expert.removeEmbeddings",
+        "title": "Remove SQL Embeddings"
+      }
+    ],
+    "keybindings":[
+      {
+        "command": "sql-expert.removeEmbeddings",
+        "key": "alt+shift+r",
+        "when": "editorLangId == python"
       }
     ]
   },
