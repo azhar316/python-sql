@@ -5,7 +5,7 @@
   "repository": {
     "injection": {
       "name": "meta.embedded.block.sql",
-      "begin": "(--sql )",
+      "begin": "(--sql\\s)",
       "end": "(;)",
       "patterns": [{ "include": "source.sql" }]
     }

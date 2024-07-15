@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
       const docText = document.getText();
 
       const textWithoutEmbedding = docText.replace(pythonStrRegex, (match, g1, g2, g3) => {
-        const embeddingRegex = /(--sql$|--sql )/;
+        const embeddingRegex = /(--sql$|--sql\s)/;
         return g1 + g2 + g3.replace(embeddingRegex, "") + g2;
       });
 
