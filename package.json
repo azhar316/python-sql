@@ -1,14 +1,25 @@
 {
   "name": "sql-expert",
   "displayName": "SQL Expert",
-  "description": "",
+  "description": "Highlights syntax and offers quick suggestions for embedded SQL in python",
   "version": "0.0.1",
+  "author": {
+    "name": "Azharuddin Syed",
+    "url": "https://www.linkedin.com/in/azharuddinsyed/"
+  },
   "engines": {
     "vscode": "^1.50.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "python",
+    "sql",
+    "inline",
+    "embedded"
+  ],
+  "icon": "",
   "activationEvents": [
     "onLanguage:python",
     "onCommand:sql-expert.removeEmbeddings"
