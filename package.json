@@ -3,6 +3,7 @@
   "displayName": "Python SQL",
   "description": "Highlights syntax and offers quick suggestions for embedded SQL in python",
   "version": "0.0.1",
+  "publisher": "AzharuddinSyed",
   "author": {
     "name": "Azharuddin Syed",
     "url": "https://www.linkedin.com/in/azharuddinsyed/"
