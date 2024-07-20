@@ -19,7 +19,16 @@
     "inline",
     "embedded"
   ],
-  "icon": "",
+  "icon": "images/icon.png",
+  "bugs": {
+    "url": "https://github.com/azhar316/python-sql/issues",
+    "email": "sayed.azharudin@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azhar316/python-sql.git"
+  },
+  "homepage": "https://github.com/azhar316/python-sql/blob/main/README.md",
   "activationEvents": [
     "onLanguage:python",
     "onCommand:python-sql.removeEmbeddings"
