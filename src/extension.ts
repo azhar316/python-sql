@@ -115,7 +115,7 @@ async function removeEmbeddings() {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Congratulations, your extension "sql-expert" is now active!');
+  console.log('Congratulations, your extension "python-sql" is now active!');
 
   // Switch on suggestions in strings for completionItemProvider to work
   const config = vscode.workspace.getConfiguration();
@@ -133,7 +133,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
   const removeEmbeddingsDisposable = vscode.commands.registerCommand(
-    "sql-expert.removeEmbeddings",
+    "python-sql.removeEmbeddings",
     removeEmbeddings
   );
 

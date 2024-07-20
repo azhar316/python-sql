@@ -1,6 +1,6 @@
 {
-  "name": "sql-expert",
-  "displayName": "SQL Expert",
+  "name": "python-sql",
+  "displayName": "Python SQL",
   "description": "Highlights syntax and offers quick suggestions for embedded SQL in python",
   "version": "0.0.1",
   "author": {
@@ -22,7 +22,7 @@
   "icon": "",
   "activationEvents": [
     "onLanguage:python",
-    "onCommand:sql-expert.removeEmbeddings"
+    "onCommand:python-sql.removeEmbeddings"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -41,20 +41,20 @@
     "menus": {
       "commandPalette": [
         {
-          "command": "sql-expert.removeEmbeddings",
+          "command": "python-sql.removeEmbeddings",
           "when": "editorLangId == python"
         }
       ]
     },
     "commands": [
       {
-        "command": "sql-expert.removeEmbeddings",
+        "command": "python-sql.removeEmbeddings",
         "title": "Remove SQL Embeddings"
       }
     ],
     "keybindings": [
       {
-        "command": "sql-expert.removeEmbeddings",
+        "command": "python-sql.removeEmbeddings",
         "key": "alt+shift+r",
         "when": "editorLangId == python"
       }

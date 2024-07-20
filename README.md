@@ -1,6 +1,6 @@
-# sql-expert README
+# python-sql README
 
-This is the README for your extension "sql-expert". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "python-sql". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
