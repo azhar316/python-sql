@@ -1,71 +1,49 @@
 # python-sql README
 
-This is the README for your extension "python-sql". After writing up a brief description, we recommend including the following sections.
+## Description
+
+**python-sql** is a Visual Studio Code extension designed to enhance the developer experience when working with SQL embedded in Python strings. This extension provides syntax highlighting and quick suggestions, making it easier to write, read, and maintain SQL code within Python scripts.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Syntax Highlighting**: Highlights SQL syntax within Python strings when they contain the '--sql' token.
+<br><br>
+![Syntax Highlighting](images/syntax-highlighting.gif)
+<br><br>
+- **Quick Suggestions**: Offers real-time SQL code suggestions to speed up development.
+<br><br>
+![Quick Suggestions](images/quick-suggestions.gif)
+<br><br>
+- **Remove SQL Embeddings**: Provides a command to remove all '--sql' tokens from the code.<br>
+Usage: Option/Alt + Shift + R
+<br><br>
+![Remove SQL Embeddings](images/remove-sql-embeddings.gif)
+<br><br>
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code version 1.50.0 or higher.
+- Python extension for VS Code (optional, but recommended for a better Python development experience).
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Open VS Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or pressing `Ctrl+Shift+X`.
+3. Search for "python-sql".
+4. Click "Install" to install the extension.
+5. Reload VS Code to activate the extension.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- Initial release of python-sql.
 
 ---
 
-## Following extension guidelines
+## Contributing
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+If you encounter any issues or would like to contribute to this extension, please create a issue or raise a PR by visiting the [Github repo](https://github.com/azhar316/python-sql).
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy your enhanced Python-SQL coding experience!**

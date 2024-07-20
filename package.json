@@ -2,7 +2,7 @@
   "name": "python-sql",
   "displayName": "Python SQL",
   "description": "Highlights syntax and offers quick suggestions for embedded SQL in python",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "AzharuddinSyed",
   "author": {
     "name": "Azharuddin Syed",
