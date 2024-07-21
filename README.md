@@ -39,6 +39,11 @@ Usage: Option/Alt + Shift + R
 
 - Initial release of python-sql.
 
+### 1.1.0
+
+- Handle f string variable substitution causing Quick Suggestions failure.
+- Enhance TextMate grammar to make closing token redundant.
+
 ---
 
 ## Contributing
