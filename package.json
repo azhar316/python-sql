@@ -44,7 +44,8 @@
           "source.python"
         ],
         "embeddedLanguages": {
-          "meta.embedded.block.sql": "sql"
+          "meta.embedded.block.sql": "sql",
+          "meta.embedded.inline.sql": "sql"
         }
       }
     ],

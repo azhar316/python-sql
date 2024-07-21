@@ -1,12 +1,38 @@
 {
   "scopeName": "sql.injection",
-  "injectionSelector": "L:string.quoted.single.python, L:string.quoted.multi.python, L:meta.fstring.python",
-  "patterns": [{ "include": "#injection" }],
+  "injectionSelector": "L:source.python -comment -string.quoted.docstring",
+  "patterns": [{ "include": "#block" }, { "include": "#inline" }],
   "repository": {
-    "injection": {
+    "block": {
       "name": "meta.embedded.block.sql",
-      "begin": "(--sql\\s)",
-      "end": "(;)",
+      "begin": "f?(('|\"){3})(.*?)(--sql\\s)",
+      "beginCaptures": {
+        "1": {
+          "name": "string.quoted.multi.python, punctuation.definition.string.begin.python"
+        }
+      },
+      "end": "(\\1)",
+      "endCaptures": {
+        "1": {
+          "name": "string.quoted.multi.python, punctuation.definition.string.end.python"
+        }
+      },
+      "patterns": [{ "include": "source.sql" }]
+    },
+    "inline": {
+      "name": "meta.embedded.inline.sql",
+      "begin": "f?('|\")(.*?)(--sql\\s)",
+      "beginCaptures": {
+        "1": {
+          "name": "string.quoted.single.python, punctuation.definition.string.begin.python"
+        }
+      },
+      "end": "(\\1)",
+      "endCaptures": {
+        "1": {
+          "name": "string.quoted.single.python, punctuation.definition.string.end.python"
+        }
+      },
       "patterns": [{ "include": "source.sql" }]
     }
   }
