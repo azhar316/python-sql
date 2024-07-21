@@ -33,11 +33,14 @@ class SQLCompletionItemProvider implements vscode.CompletionItemProvider {
       openingToken.length +
       lastMatch[3].length +
       6;
-    const sqlString = text.slice(startingChars);
+    let sqlString = text.slice(startingChars);
 
     if (sqlString.match(new RegExp(`(;|[^\]?${openingToken})`))) {
       return null;
     }
+
+    // Handle variable substitution in f-strings
+    sqlString = sqlString.replaceAll(/\{.*?\}/g, 'PLACEHOLDER');
 
     const autoCompleter = new SQLAutocomplete(SQLDialect.PLpgSQL);
     const suggestions = autoCompleter.autocomplete(sqlString);
